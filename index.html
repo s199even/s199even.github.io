@@ -482,7 +482,8 @@
 
 
     <script>
-        $('.bg-cover').css('background-image', 'url(/medias/banner/0.jpg)');
+        // 每天切换 banner 图.  Switch banner image every day.
+        $('.bg-cover').css('background-image', 'url(/medias/banner/5.jpg)');
     </script>
 
 
@@ -661,7 +662,7 @@
             preload: 'auto',
             volume: Number('0.7'),
             video: {
-                url: 'http://f.video.weibocdn.com/u0/1KyGHNeXgx07RkCddnUs01041202w6lZ0E010.mp4?label=mp4_720p&template=1280x720.25.0&trans_finger=1f0da16358befad33323e3a1b7f95fc9&ori=0&ps=1CwnkDw1GXwCQx&Expires=1636706296&ssig=bxb15%2FaW4O&KID=unistore,video',
+                url: 'http://fb.video.weibocdn.com/u8/ntsuWEjngx07RfH3x5bW01041202bRWk0E018.mp4?label=mp4_720p&template=1280x720.25.0&trans_finger=775cb0ab963a74099cf9f840cd1987f1&ori=0&ps=1BVp4ysnknHVZu&Expires=1636711079&ssig=xEOq4bEBTT&KID=unistore,video',
                 pic: '',
                 thumbnails: ''
             }
@@ -902,20 +903,6 @@
 
 <!-- Baidu Push -->
 
-<script>
-    (function () {
-        var bp = document.createElement('script');
-        var curProtocol = window.location.protocol.split(':')[0];
-        if (curProtocol === 'https') {
-            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-        } else {
-            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-        }
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-    })();
-</script>
-
 
     <script src="/libs/others/clicklove.js" async="async"></script>
 
@@ -947,30 +934,9 @@
 
 
 <script>if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js?t=1636705505238')
+  navigator.serviceWorker.register('/sw.js?t=1636707835774')
     .then(function () {console.log('ServiceWorker Register Successfully.')})
     .catch(function (e) {console.error(e)});
 }
-</script>
-        <script src="//cdn.jsdelivr.net/npm/js-base64/base64.min.js"></script>
-        <script>
-        const hasAttr = (e,a) => a.some(_=> e.attr(_)!==undefined);
-        $('a').each(function() {
-          const $this = $(this);
-          if(hasAttr($this,["data-fancybox","ignore-external-link"])) return;
-          const href = $this.attr('href');
-          if (href && href.match('^((http|https|thunder|qqdl|ed2k|Flashget|qbrowser|ftp|rtsp|mms)://)')) {
-            const strs = href.split('/');
-            if (strs.length >= 3) {
-                const host = strs[2];
-                if (host !== '' || window.location.host) {
-                    $this.attr('href', '/go.html?u='+Base64.encode(href)+'').attr('rel', 'external nofollow noopener noreferrer');
-                    if (true) {
-                        $this.attr('target', '_blank');
-                    }
-                }
-            }
-          }
-        });
-        </script></body>
+</script></body>
 </html>
