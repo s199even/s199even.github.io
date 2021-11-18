@@ -436,7 +436,7 @@
 
     <script>
         // 每天切换 banner 图.  Switch banner image every day.
-        $('.bg-cover').css('background-image', 'url(/medias/banner/5.jpg)');
+        $('.bg-cover').css('background-image', 'url(/medias/banner/4.jpg)');
     </script>
 
     </div>
@@ -711,25 +711,7 @@
 <blockquote>
 <p>注：如果需要交换友链，请在下面留言</p>
 </blockquote>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>
+
             </div>
         </div>
         <div class="card">
@@ -846,7 +828,7 @@
             
                 
                     &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;<span
-                            class="white-color">125</span>&nbsp;字
+                            class="white-color">73</span>&nbsp;字
                 
                 
                     <span id="icp"><img src="/medias/icp.png" style="vertical-align: text-bottom;" alt="icp"/>
@@ -1018,7 +1000,7 @@
 
 
 <script>if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js?t=1636707835774')
+  navigator.serviceWorker.register('/sw.js?t=1637217967853')
     .then(function () {console.log('ServiceWorker Register Successfully.')})
     .catch(function (e) {console.error(e)});
 }
